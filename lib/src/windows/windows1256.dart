@@ -3,7 +3,7 @@ import 'dart:convert' as dart_convert;
 import 'windows.dart';
 
 /// Provides a windows 1256 / cp1256 codec for easy encoding and decoding.
-class Windows1256Codec extends dart_convert.Encoding {
+final class Windows1256Codec extends dart_convert.Encoding {
   /// Creates a new []
   ///
   /// Set [allowInvalid] to `true` for ignoring invalid data.
@@ -33,7 +33,7 @@ class Windows1256Codec extends dart_convert.Encoding {
 }
 
 /// Decodes windows 1256 / cp1256 data.
-class Windows1256Decoder extends WindowsDecoder {
+final class Windows1256Decoder extends WindowsDecoder {
   /// Creates a new []
   ///
   /// Set [allowInvalid] to `true` for ignoring invalid data.
@@ -44,7 +44,7 @@ class Windows1256Decoder extends WindowsDecoder {
 }
 
 /// Encodes texts into windows 1256 data
-class Windows1256Encoder extends WindowsEncoder {
+final class Windows1256Encoder extends WindowsEncoder {
   /// Creates a new []
   ///
   /// Set [allowInvalid] to `true` for ignoring invalid data.

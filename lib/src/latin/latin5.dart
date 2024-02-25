@@ -3,7 +3,7 @@ import 'dart:convert' as dart_convert;
 import 'latin.dart';
 
 /// Provides a latin 5 / iso-8859-5 codec for easy encoding and decoding.
-class Latin5Codec extends dart_convert.Encoding {
+final class Latin5Codec extends dart_convert.Encoding {
   /// Creates a new [Latin5Codec]
   ///
   /// Set [allowInvalid] to `true` for ignoring invalid data.
@@ -33,7 +33,7 @@ class Latin5Codec extends dart_convert.Encoding {
 }
 
 /// Encodes texts into latin 5 / iso-8859-5 data
-class Latin5Encoder extends LatinEncoder {
+final class Latin5Encoder extends LatinEncoder {
   /// Creates a new [Latin5Encoder]
   ///
   /// Set [allowInvalid] to `true` for ignoring invalid data.
@@ -44,7 +44,7 @@ class Latin5Encoder extends LatinEncoder {
 }
 
 /// Decodes latin 5 /  iso-8859-5 data.
-class Latin5Decoder extends LatinDecoder {
+final class Latin5Decoder extends LatinDecoder {
   /// Creates a new [Latin5Decoder]
   ///
   /// Set [allowInvalid] to `true` for ignoring invalid data.

@@ -5,7 +5,7 @@ import 'dos.dart';
 /// Provides a DOS-Latin1 / cp850 codec for easy encoding and decoding.
 ///
 /// https://en.wikipedia.org/wiki/Code_page_850
-class CodePage850Codec extends dart_convert.Encoding {
+final class CodePage850Codec extends dart_convert.Encoding {
   /// Creates a new [CodePage850Codec]
   ///
   /// Set [allowInvalid] to `true` for ignoring invalid data.
@@ -35,7 +35,7 @@ class CodePage850Codec extends dart_convert.Encoding {
 }
 
 /// Decodes windows 1250 / cp1250 data.
-class CodePage850Decoder extends DosCodePageDecoder {
+final class CodePage850Decoder extends DosCodePageDecoder {
   /// Creates a new [CodePage850Decoder]
   ///
   /// Set [allowInvalid] to `true` for ignoring invalid data.
@@ -49,7 +49,7 @@ class CodePage850Decoder extends DosCodePageDecoder {
 }
 
 /// Encodes texts into cp-850 / DOS-Latin-1 data
-class CodePage850Encoder extends DosCodePageEncoder {
+final class CodePage850Encoder extends DosCodePageEncoder {
   /// Creates a new [CodePage850Encoder]
   ///
   /// Set [allowInvalid] to `true` for ignoring invalid data.

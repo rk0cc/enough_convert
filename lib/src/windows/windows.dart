@@ -1,9 +1,12 @@
+import 'package:meta/meta.dart';
+
 import '../base.dart';
 
-/// Contains base classes for windows codepage codecs
+// Contains base classes for windows codepage codecs
 
 /// Provides a windows codepage decoder.
-class WindowsDecoder extends BaseDecoder {
+@internal
+base class WindowsDecoder extends BaseDecoder {
   /// Creates a new windows codepage decoder.
   ///
   /// The [symbols] need to be exactly `128` characters long.
@@ -15,7 +18,8 @@ class WindowsDecoder extends BaseDecoder {
 }
 
 /// Provides a simple windows codepage encoder.
-class WindowsEncoder extends BaseEncoder {
+@internal
+base class WindowsEncoder extends BaseEncoder {
   /// Creates a new windows codepage encoder.
   ///
   /// Set [allowInvalid] to true in case invalid characters

@@ -3,7 +3,7 @@ import 'dart:convert' as dart_convert;
 import 'windows.dart';
 
 /// Provides a windows 1250 / cp1250 codec for easy encoding and decoding.
-class Windows1250Codec extends dart_convert.Encoding {
+final class Windows1250Codec extends dart_convert.Encoding {
   /// Creates a new [Windows1250Codec]
   ///
   /// Set [allowInvalid] to `true` for ignoring invalid data.
@@ -33,7 +33,7 @@ class Windows1250Codec extends dart_convert.Encoding {
 }
 
 /// Decodes windows 1250 / cp1250 data.
-class Windows1250Decoder extends WindowsDecoder {
+final class Windows1250Decoder extends WindowsDecoder {
   /// Creates a new [Windows1250Decoder]
   ///
   /// Set [allowInvalid] to `true` for ignoring invalid data.
@@ -44,7 +44,7 @@ class Windows1250Decoder extends WindowsDecoder {
 }
 
 /// Encodes texts into windows 1250 data
-class Windows1250Encoder extends WindowsEncoder {
+final class Windows1250Encoder extends WindowsEncoder {
   /// Creates a new [Windows1250Encoder]
   ///
   /// Set [allowInvalid] to `true` for ignoring invalid data.

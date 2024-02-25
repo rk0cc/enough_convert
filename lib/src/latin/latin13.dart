@@ -3,7 +3,7 @@ import 'dart:convert' as dart_convert;
 import 'latin.dart';
 
 /// Provides a latin 13 / iso-8859-13 codec for easy encoding and decoding.
-class Latin13Codec extends dart_convert.Encoding {
+final class Latin13Codec extends dart_convert.Encoding {
   /// Creates a new [Latin13Codec]
   ///
   /// Set [allowInvalid] to `true` for ignoring invalid data.
@@ -33,7 +33,7 @@ class Latin13Codec extends dart_convert.Encoding {
 }
 
 /// Encodes texts into latin 13 / iso-88513-13 data
-class Latin13Encoder extends LatinEncoder {
+final class Latin13Encoder extends LatinEncoder {
   /// Creates a new [Latin13Encoder]
   ///
   /// Set [allowInvalid] to `true` for ignoring invalid data.
@@ -44,7 +44,7 @@ class Latin13Encoder extends LatinEncoder {
 }
 
 /// Decodes latin 13 /  iso-88513-13 data.
-class Latin13Decoder extends LatinDecoder {
+final class Latin13Decoder extends LatinDecoder {
   /// Creates a new [Latin13Decoder]
   ///
   /// Set [allowInvalid] to `true` for ignoring invalid data.

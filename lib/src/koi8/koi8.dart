@@ -1,9 +1,12 @@
+import 'package:meta/meta.dart';
+
 import '../base.dart';
 
-/// Contains base classes for KOI8 codecs
+// Contains base classes for KOI8 codecs
 
 /// Provides a KOI8 decoder.
-class KoiDecoder extends BaseDecoder {
+@internal
+base class KoiDecoder extends BaseDecoder {
   /// Creates a new [KoiDecoder].
   ///
   /// The [symbols] need to be exactly `128` characters long.
@@ -15,7 +18,8 @@ class KoiDecoder extends BaseDecoder {
 }
 
 /// Provides a simple KOI8 encoder.
-class KoiEncoder extends BaseEncoder {
+@internal
+base class KoiEncoder extends BaseEncoder {
   /// Creates a new [KoiEncoder].
   ///
   /// Set [allowInvalid] to true in case invalid characters

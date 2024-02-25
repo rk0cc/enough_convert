@@ -26,7 +26,7 @@ const GbkCodec gbk = GbkCodec();
 
 /// A [GbkCodec] encodes strings to GBK code units (bytes) and decodes
 /// GBK code units to strings.
-class GbkCodec extends Encoding {
+final class GbkCodec extends Encoding {
   /// Instantiates a new [GbkCodec].
   ///
   /// The optional [allowInvalid] argument defines how [decoder] (and [decode])
@@ -71,7 +71,7 @@ class GbkCodec extends Encoding {
 
 /// This class converts strings to their GBK code units (a list of
 /// unsigned 8-bit integers).
-class GbkEncoder extends Converter<String, List<int>> {
+final class GbkEncoder extends Converter<String, List<int>> {
   /// Creates a new [GbkEncoder]
   const GbkEncoder();
 
@@ -184,7 +184,7 @@ class _GbkEncoderSink with StringConversionSinkMixin {
 
 /// This class converts GBK code units (lists of unsigned 8-bit integers)
 /// to a string.
-class GbkDecoder extends Converter<List<int>, String> {
+final class GbkDecoder extends Converter<List<int>, String> {
   /// Instantiates a new [GbkDecoder].
   ///
   /// The optional [allowInvalid] argument defines how [convert] deals

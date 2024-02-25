@@ -3,7 +3,7 @@ import 'dart:convert' as dart_convert;
 import 'koi8.dart';
 
 /// A codec for the KOI8-r encoding
-class Koi8rCodec extends dart_convert.Encoding {
+final class Koi8rCodec extends dart_convert.Encoding {
   /// Creates a new [Koi8rCodec]
   ///
   /// Set [allowInvalid] to `true` for ignoring invalid data.
@@ -32,7 +32,7 @@ class Koi8rCodec extends dart_convert.Encoding {
 }
 
 /// The KOI8-r compatible encoder
-class Koi8rEncoder extends KoiEncoder {
+final class Koi8rEncoder extends KoiEncoder {
   /// Creates a new [Koi8rEncoder]
   ///
   /// Set [allowInvalid] to `true` for ignoring invalid data.
@@ -43,7 +43,7 @@ class Koi8rEncoder extends KoiEncoder {
 }
 
 /// A KOI8-r compatible decoder
-class Koi8rDecoder extends KoiDecoder {
+final class Koi8rDecoder extends KoiDecoder {
   /// Creates a new [KoiDecoder]
   ///
   /// Set [allowInvalid] to `true` for ignoring invalid data.

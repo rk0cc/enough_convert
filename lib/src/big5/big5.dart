@@ -14,7 +14,7 @@ const int _runeError = 0xFFFD;
 const int _runeSelf = 0x80;
 
 /// A Big5 compatible codec
-class Big5Codec extends Encoding {
+final class Big5Codec extends Encoding {
   /// Creates a new [Big5Codec]
   ///
   /// Set [allowInvalid] to `true` for ignoring invalid data.
@@ -44,7 +44,7 @@ class Big5Codec extends Encoding {
 /// A Big5 compatible encoder
 ///
 /// Compare https://en.wikipedia.org/wiki/Big5
-class Big5Encoder extends Converter<String, List<int>> {
+final class Big5Encoder extends Converter<String, List<int>> {
   /// Creates a new [Big5Encoder]
   const Big5Encoder({this.allowInvalid = false});
 
@@ -145,7 +145,7 @@ class Big5Encoder extends Converter<String, List<int>> {
 /// A Big5 compatible decoder
 ///
 /// Compare https://en.wikipedia.org/wiki/Big5
-class Big5Decoder extends Converter<List<int>, String> {
+final class Big5Decoder extends Converter<List<int>, String> {
   /// Creates a new [Big5Decoder]
   const Big5Decoder({this.allowInvalid = false});
 

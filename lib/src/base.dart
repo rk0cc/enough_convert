@@ -2,10 +2,13 @@ import 'dart:convert' as dart_convert;
 
 import 'dart:typed_data';
 
-/// Contains base classes for 8bit codecs
+import 'package:meta/meta.dart';
+
+// Contains base classes for 8bit codecs
 
 /// Provides a simple decoder.
-class BaseDecoder extends dart_convert.Converter<List<int>, String> {
+@internal
+base class BaseDecoder extends dart_convert.Converter<List<int>, String> {
   /// Creates a new 8bit decoder.
   ///
   /// [symbols] contain all symbols different than UTF8 from the
@@ -86,7 +89,8 @@ class BaseDecoder extends dart_convert.Converter<List<int>, String> {
 }
 
 /// Provides a simple 8bit encoder.
-class BaseEncoder extends dart_convert.Converter<String, List<int>> {
+@internal
+base class BaseEncoder extends dart_convert.Converter<String, List<int>> {
   /// Creates a new encoder.
   ///
   /// Set [allowInvalid] to true in case invalid characters should be
@@ -193,7 +197,8 @@ class BaseEncoder extends dart_convert.Converter<String, List<int>> {
 /// Decoder sink for chunked conversion.
 ///
 /// Compare `BaseDecoder.startChunkedConversion(...)`.
-class BaseDecoderSink extends dart_convert.ByteConversionSinkBase {
+@internal
+base class BaseDecoderSink extends dart_convert.ByteConversionSinkBase {
   /// Creates a new basic decoder sink
   BaseDecoderSink(
     this.sink,
@@ -263,7 +268,8 @@ class BaseDecoderSink extends dart_convert.ByteConversionSinkBase {
 /// Encoder sink for chunked conversion.
 ///
 /// Compare [BaseEncoder.startChunkedConversion].
-class BaseEncoderSink extends dart_convert.StringConversionSinkBase {
+@internal
+base class BaseEncoderSink extends dart_convert.StringConversionSinkBase {
   /// Creates a new basic encoder sink
   BaseEncoderSink(this.sink, this.encoder);
 

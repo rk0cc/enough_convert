@@ -1,12 +1,15 @@
+import 'package:meta/meta.dart';
+
 import '../base.dart';
 
-/// Contains base classes for DOS codepage codecs
+// Contains base classes for DOS codepage codecs
 
 /// Commonly used DOS code pages start block
 const String _dosCodePageCommonStartBlock = '☺☻♥♦♣♠•◘○◙♂♀♪♫☼►◄↕‼¶§▬↨↑↓→←∟↔▲▼';
 
 /// Provides a DOS codepage decoder.
-class DosCodePageDecoder extends BaseDecoder {
+@internal
+base class DosCodePageDecoder extends BaseDecoder {
   /// Creates a new windows codepage decoder.
   ///
   /// The [symbols] need to be exactly `128` characters long.
@@ -25,7 +28,8 @@ class DosCodePageDecoder extends BaseDecoder {
 }
 
 /// Provides a simple windows codepage encoder.
-class DosCodePageEncoder extends BaseEncoder {
+@internal
+base class DosCodePageEncoder extends BaseEncoder {
   /// Creates a new windows codepage encoder.
   ///
   /// Set [allowInvalid] to true in case invalid characters

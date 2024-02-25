@@ -1,9 +1,12 @@
+import 'package:meta/meta.dart';
+
 import '../base.dart';
 
-/// Contains base classes for latin 2  to latin 16 / ISO-8859-XX codecs
+// Contains base classes for latin 2  to latin 16 / ISO-8859-XX codecs
 
 /// Provides an ISO-8859-XX  decoder.
-class LatinDecoder extends BaseDecoder {
+@internal
+base class LatinDecoder extends BaseDecoder {
   /// Creates a new latin 1 decoder.
   ///
   /// The [symbols] need to be exactly `95` characters long.
@@ -15,7 +18,8 @@ class LatinDecoder extends BaseDecoder {
 }
 
 /// Provides an ISO-8859-XX encoder.
-class LatinEncoder extends BaseEncoder {
+@internal
+base class LatinEncoder extends BaseEncoder {
   /// Creates a new latin / iso-8859-XX encoder.
   ///
   /// Set [allowInvalid] to true in case invalid characters should be
