@@ -56,7 +56,7 @@ Add this dependency your pubspec.yaml file:
 
 ```
 dependencies:
-  enough_convert: ^1.6.0
+  enough_convert: ^2.0.0
 ```
 The latest version or `enough_convert` is [![enough_convert version](https://img.shields.io/pub/v/enough_convert.svg)](https://pub.dartlang.org/packages/enough_convert).
 
@@ -67,7 +67,7 @@ Dylan (not associated with this project in any way) explains the world of text e
 [![Plain text? Really?](https://img.youtube.com/vi/_mZBa3sqTrI/0.jpg)](https://www.youtube.com/watch?v=_mZBa3sqTrI)
 
 
-## It's 2022, do we still need this?
+## Do we still need this in the future?
 
 Short answer: yes.
 

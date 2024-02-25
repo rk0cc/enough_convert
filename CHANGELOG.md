@@ -1,3 +1,8 @@
+## 2.0.0
+
+* All encoding classes marked `final`.
+* Add cp-858 encoding support.
+
 ## 1.6.0
 - Add cp-850 / DOS-Latin-1 encoding support.
 - Improve documentation.
