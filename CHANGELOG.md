@@ -1,6 +1,7 @@
 ## 2.0.0
 
-* All encoding classes marked `final`.
+* Dart 3 syntax applied:
+  * All encoding classes marked `final`.
 * Add cp-858 encoding support.
 
 ## 1.6.0
